@@ -66,3 +66,172 @@ python main.py
 # 4. Task 2
 
 Додала комментарі щодо кроків виконання напряму в файл. Скріни результатів додані в папку screens.
+
+# 5. Task 3
+
+1. Моя видача щодо виконання п4 задачі
+
+```javascript
+Результати пошуку з фільтрацією (Приклад A):
+Результати пошуку з фільтрацією (Приклад B):
+Результат 1:
+  Назва: Capturing knots in polymers
+  Категорія: cond-mat.soft
+  Рік: 2007
+  Абстракт: This paper visualizes a knot reduction algorithm...
+
+Результат 2:
+  Назва: Symbolic sensors : one solution to the numerical-symbolic interface
+  Категорія: physics.ins-det
+  Рік: 2007
+  Абстракт: This paper introduces the concept of symbolic sensor as an extension of the
+smart sensor one. Then, ...
+
+Результат 3:
+  Назва: The Mathematics
+  Категорія: math.HO
+  Рік: 2007
+  Абстракт: This is an essay that considering the knowledge structure and language of a
+different nature, attemp...
+
+Результат 4:
+  Назва: Modeling the field of laser welding melt pool by RBFNN
+  Категорія: physics.comp-ph
+  Рік: 2007
+  Абстракт: Efficient control of a laser welding process requires the reliable prediction
+of process behavior. A...
+
+Результат 5:
+  Назва: Why should anyone care about computing with anyons?
+  Категорія: quant-ph
+  Рік: 2007
+  Абстракт: In this article we present a pedagogical introduction of the main ideas and
+recent advances in the a... ```
+
+З цього результату роблю висновок, що за заданими критеріями в варіанті А просто не було статей. 
+Всі статті з загаданою темою в моєму випадку були видані в 2007 році, вибірка це підсвічує.
+
+
+2. Виконання п5 задачі. Видача
+
+```javascript
+Норми ембеддингів: min=1.000000, max=1.000000, mean=1.000000
+Топ-5 статей за cosine similarity:
+  Cosine: 0.8294
+  Назва: Capturing knots in polymers
+  Категорія: cond-mat.soft
+  Рік: 2007
+  Абстракт: This paper visualizes a knot reduction algorithm...
+
+  Cosine: 0.8260
+  Назва: Symbolic sensors : one solution to the numerical-symbolic interface
+  Категорія: physics.ins-det
+  Рік: 2007
+  Абстракт: This paper introduces the concept of symbolic sensor as an extension of the
+smart sensor one. Then, ...
+
+  Cosine: 0.8254
+  Назва: The Mathematics
+  Категорія: math.HO
+  Рік: 2007
+  Абстракт: This is an essay that considering the knowledge structure and language of a
+different nature, attemp...
+
+  Cosine: 0.8181
+  Назва: Modeling the field of laser welding melt pool by RBFNN
+  Категорія: physics.comp-ph
+  Рік: 2007
+  Абстракт: Efficient control of a laser welding process requires the reliable prediction
+of process behavior. A...
+
+  Cosine: 0.8142
+  Назва: Python for Education: Computational Methods for Nonlinear Systems
+  Категорія: nlin.CD
+  Рік: 2007
+  Абстракт: We describe a novel, interdisciplinary, computational methods course that
+uses Python and associated...
+
+Топ-5 статей за dot product:
+  Dot Product: 0.8294
+  Назва: Capturing knots in polymers
+  Категорія: cond-mat.soft
+  Рік: 2007
+  Абстракт: This paper visualizes a knot reduction algorithm...
+
+  Dot Product: 0.8260
+  Назва: Symbolic sensors : one solution to the numerical-symbolic interface
+  Категорія: physics.ins-det
+  Рік: 2007
+  Абстракт: This paper introduces the concept of symbolic sensor as an extension of the
+smart sensor one. Then, ...
+
+  Dot Product: 0.8254
+  Назва: The Mathematics
+  Категорія: math.HO
+  Рік: 2007
+  Абстракт: This is an essay that considering the knowledge structure and language of a
+different nature, attemp...
+
+  Dot Product: 0.8181
+  Назва: Modeling the field of laser welding melt pool by RBFNN
+  Категорія: physics.comp-ph
+  Рік: 2007
+  Абстракт: Efficient control of a laser welding process requires the reliable prediction
+of process behavior. A...
+
+  Dot Product: 0.8142
+  Назва: Python for Education: Computational Methods for Nonlinear Systems
+  Категорія: nlin.CD
+  Рік: 2007
+  Абстракт: We describe a novel, interdisciplinary, computational methods course that
+uses Python and associated...
+
+Топ-5 статей за L2-distance:
+  L2 Distance: 0.5842
+  Назва: Capturing knots in polymers
+  Категорія: cond-mat.soft
+  Рік: 2007
+  Абстракт: This paper visualizes a knot reduction algorithm...
+
+  L2 Distance: 0.5899
+  Назва: Symbolic sensors : one solution to the numerical-symbolic interface
+  Категорія: physics.ins-det
+  Рік: 2007
+  Абстракт: This paper introduces the concept of symbolic sensor as an extension of the
+smart sensor one. Then, ...
+
+  L2 Distance: 0.5910
+  Назва: The Mathematics
+  Категорія: math.HO
+  Рік: 2007
+  Абстракт: This is an essay that considering the knowledge structure and language of a
+different nature, attemp...
+
+  L2 Distance: 0.6032
+  Назва: Modeling the field of laser welding melt pool by RBFNN
+  Категорія: physics.comp-ph
+  Рік: 2007
+  Абстракт: Efficient control of a laser welding process requires the reliable prediction
+of process behavior. A...
+
+  L2 Distance: 0.6095
+  Назва: Python for Education: Computational Methods for Nonlinear Systems
+  Категорія: nlin.CD
+  Рік: 2007
+  Абстракт: We describe a novel, interdisciplinary, computational methods course that
+uses Python and associated...
+```
+
+3. Чи збігаються топ-5 для cosine і dot product і чому?
+Збігаються. Як зазначала в минулих замітках - при нормалізації для косинусної схожості значущим залишається лише скалярний добуток в чисельнику, тому використала в формулі напряму dot.
+
+4. Чи відрізняються результати для L2 і чому?
+Додала в вивід для наглядності відстані.
+L2 менше значення означає більшу схожість, в cosine/dot навпаки. Тому в L2 ми беремо найменші значення.
+Якщо подивитись на вибірку статей, то не відрізняються по значенням виводу - це одні і ті самі статті. Тобто по суті змінюється лише шкала чисел.
+
+5. Що сталося б, якби ембеддинги не були нормалізовані?
+Cosine би сходилась, бо в формулі закладено нормалізацію (знаменник).
+Dot давав би інший результат через довжину вектора - менш релевентні піднялись би нагору в видачі через довжину вектора.
+L2-distance - теж чутлива до довжини, також змінить результат.
+Тож схоже, що саме нормалізація вплинула на результьти. А за рахунок того, що вектори нормалізовані, то ми ще і на обчисленнях зекономили.
