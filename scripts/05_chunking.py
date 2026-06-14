@@ -67,7 +67,7 @@ def main():
         chunk_size = 100
         overlap = 20
 
-        # --- Fixed-size chunking ---
+        # Fixed-size chunking
         fixed_num = 1  # локальний лічильник для цієї статті
         for i in range(0, len(words), chunk_size - overlap):
             chunk_words = words[i:i + chunk_size]
@@ -82,7 +82,7 @@ def main():
                 })
                 fixed_num += 1
 
-        # --- Semantic chunking ---
+        # Semantic chunking
         sentences = re.split(r'(?<=[.!?]) +', abstract)
         current_chunk = []
         current_length = 0
